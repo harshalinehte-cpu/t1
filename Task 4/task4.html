@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harshali - All Mini Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="dark">
+
+  <header>
+    <nav>
+      <div class="logo">Harshali Projects</div>
+      <div class="nav-links">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#todo">To-Do</a>
+        <a href="#products">Products</a>
+      </div>
+      <button id="theme-toggle">☀️</button>
+    </nav>
+  </header>
+
+  <!-- 1. Portfolio Section -->
+  <section id="portfolio">
+    <div class="hero">
+      <h1>Hi, I'm <span>Harshali</span> 👋</h1>
+      <p>Learning Web • Java • AI/ML • From Bhopal</p>
+      <a href="#products" class="btn">Check My Mini Projects</a>
+    </div>
+
+    <div class="about">
+      <h2>About Me</h2>
+      <p>
+        Passionate beginner developer | Exploring Google Cloud, Gemini & building small cool projects daily! 🚀
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. To-Do List Section -->
+  <section id="todo">
+    <h2>To-Do List (with Local Storage) 📝</h2>
+    <div class="container">
+      <div class="add-task">
+        <input type="text" id="taskInput" placeholder="Add new task..."/>
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </div>
+  </section>
+
+  <!-- 3. Product Listing Section -->
+  <section id="products">
+    <h2>Product Listing (Filter + Sort) 🛒</h2>
+    <div class="controls">
+      <button class="cat-btn active" data-cat="all">All</button>
+      <button class="cat-btn" data-cat="top">Tops</button>
+      <button class="cat-btn" data-cat="bottom">Bottoms</button>
+      <button class="cat-btn" data-cat="accessory">Accessories</button>
+      
+      <select id="sortSelect">
+        <option value="default">Sort by...</option>
+        <option value="low">Price: Low → High</option>
+        <option value="high">Price: High → Low</option>
+      </select>
+    </div>
+    <div id="productsGrid" class="grid"></div>
+  </section>
+
+  <footer>
+    © 2026 Harshali • Made with ❤️ + lots of debugging
+  </footer>
+
+  <script src="task4.js"></script>
+</body>
+</html>
